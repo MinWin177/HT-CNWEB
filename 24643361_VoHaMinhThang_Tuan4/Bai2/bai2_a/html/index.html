@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="../css/bootstrap.min.css">
+    <script src="../js/bootstrap.bundle.min.js"></script>
+     <style>
+        .payment-container {
+            border: 2px solid #a8c6fa;
+            border-radius: 4px;
+            max-width: 500px;
+            margin: 0 auto;
+        }
+
+        .bg-checkout {
+            background-color: #f7fafe;
+        }
+
+        .custom-label {
+            font-size: 0.75rem;
+            font-weight: 700;
+            color: #7a828a;
+            text-transform: uppercase;
+            letter-spacing: 0.5px;
+        }
+
+        .table-transparent {
+            --bs-table-bg: transparent;
+        }
+    </style>
+</head>
+<body class="p-2">
+    <div class="payment-container shadow-sm">
+
+        <div class="bg-checkout p-4">
+            <h5 class="mb-4 text-dark">Checkout</h5>
+
+            <table class="table table-borderless table-transparent mb-0">
+                <tbody>
+                    <tr class="border-bottom border-light">
+                        <td class="pb-3 px-0">
+                            <div class="fw-bold text-dark">Product 1</div>
+                            <div class="text-muted" style="font-size: 0.85rem;">Lorem ipsum dolor sit amet</div>
+                        </td>
+                        <td class="text-end fw-bold text-dark pb-3 px-0 align-middle">$200</td>
+                    </tr>
+
+                    <tr class="border-bottom border-light">
+                        <td class="py-3 px-0">
+                            <div class="fw-bold text-dark">Product 2</div>
+                            <div class="text-muted" style="font-size: 0.85rem;">Lorem ipsum dolor sit amet</div>
+                        </td>
+                        <td class="text-end fw-bold text-dark py-3 px-0 align-middle">$120</td>
+                    </tr>
+
+                    <tr>
+                        <td class="pt-4 px-0 fw-bold text-dark">Total</td>
+                        <td class="text-end fw-bold text-dark pt-4 px-0 fs-5">$320</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+
+        <div class="bg-white p-4">
+            <h5 class="mb-4 text-dark">Credit Card Details</h5>
+
+            <form>
+                <div class="row mb-3">
+                    <div class="col-7">
+                        <label class="form-label custom-label">Card Holder</label>
+                        <input type="text" class="form-control" placeholder="Card Holder">
+                    </div>
+                    <div class="col-5">
+                        <label class="form-label custom-label">Expiration Date</label>
+                        <div class="d-flex align-items-center">
+                            <input type="text" class="form-control text-center" placeholder="MM">
+                            <span class="mx-2 text-muted fw-bold">/</span>
+                            <input type="text" class="form-control text-center" placeholder="YY">
+                        </div>
+                    </div>
+                </div>
+
+                <div class="row mb-4">
+                    <div class="col-8">
+                        <label class="form-label custom-label">Card Number</label>
+                        <input type="text" class="form-control" placeholder="Card Number">
+                    </div>
+                    <div class="col-4">
+                        <label class="form-label custom-label">CVC</label>
+                        <input type="text" class="form-control" placeholder="CVC">
+                    </div>
+                </div>
+
+                <button type="button" class="btn btn-primary w-100 py-2 fw-bold"
+                    style="background-color: #3b82f6; border: none;">
+                    Proceed
+                </button>
+            </form>
+        </div>
+
+    </div>
+</body>
+</html>

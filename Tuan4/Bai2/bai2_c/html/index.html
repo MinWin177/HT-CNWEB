@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="../css/bootstrap.min.css">
+    <script src="../js/bootstrap.bundle.min.js"></script>
+      <style>
+        .form-container {
+            border: 1px solid #a4bdfc;
+            padding: 30px;
+            max-width: 850px;
+            margin: 0 auto;
+            background-color: #fff;
+        }
+
+        .form-label {
+            font-size: 0.95rem;
+            color: #495057;
+            margin-bottom: 0.2rem;
+        }
+
+        .btn-teal {
+            background-color: #4db6ac;
+            border-color: #4db6ac;
+            color: white;
+        }
+
+        .btn-teal:hover {
+            background-color: #26a69a;
+            color: white;
+        }
+    </style>
+</head>
+<body>
+    <div class="container mt-4">
+        <div class="form-container">
+            <form class="row g-4">
+
+                <div class="col-md-6">
+                    <label class="form-label">Username*</label>
+                    <input type="text" class="form-control" placeholder="Choose your username">
+                </div>
+                <div class="col-md-6">
+                    <label class="form-label">Company name*</label>
+                    <input type="text" class="form-control" placeholder="your company name">
+                </div>
+
+                <div class="col-md-6">
+                    <label class="form-label">E-mail*</label>
+                    <input type="email" class="form-control" placeholder="Your current email address">
+                </div>
+                <div class="col-md-6">
+                    <label class="form-label">Category*</label>
+                    <input type="text" class="form-control" placeholder="skills catagory">
+                </div>
+
+                <div class="col-md-6">
+                    <label class="form-label">Password*</label>
+                    <input type="password" class="form-control" placeholder="Create a password">
+                </div>
+                <div class="col-md-6">
+                    <label class="form-label">Contact number*</label>
+                    <input type="text" class="form-control" placeholder="provide your number">
+                </div>
+
+                <div class="col-md-6">
+                    <label class="form-label">Full name*</label>
+                    <input type="text" class="form-control" placeholder="Your Frist name and Last name">
+                </div>
+                <div class="col-md-6">
+                    <label class="form-label">Your Location*</label>
+                    <input type="text" class="form-control" placeholder="Your Pincode and City">
+                </div>
+
+                <div class="col-md-6">
+                    <label class="form-label d-block mb-2">Gender*</label>
+                    <div class="form-check form-check-inline">
+                        <input class="form-check-input" type="radio" name="genderOptions" id="male" value="male">
+                        <label class="form-check-label" for="male">Male</label>
+                    </div>
+                    <div class="form-check form-check-inline">
+                        <input class="form-check-input" type="radio" name="genderOptions" id="female" value="female">
+                        <label class="form-check-label" for="female">Female</label>
+                    </div>
+                </div>
+
+                <div class="col-md-6">
+                    <div class="form-check mb-3 mt-md-0 mt-3">
+                        <input class="form-check-input" type="checkbox" id="terms">
+                        <label class="form-check-label" for="terms" style="font-size: 0.95rem;">
+                            Agree with the terms and conditions
+                        </label>
+                    </div>
+
+                    <div class="d-flex align-items-center">
+                        <button type="button" class="btn btn-teal px-4">Signup</button>
+                        <span class="mx-2 text-dark" style="font-size: 0.9rem;">or</span>
+                        <button type="button" class="btn btn-primary px-4">Sign Up with Facebook</button>
+                    </div>
+                </div>
+            </form>
+        </div>
+    </div>
+</body>
+</html>

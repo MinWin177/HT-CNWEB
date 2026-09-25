@@ -1,0 +1,100 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body bgcolor="#99CCFF">
+    <form>
+      <div align="center">
+        <img src="../img/logo.jpg" alt="Logo" />
+        <h2>Registration Form</h2>
+        <p>Register your Jackson Electronics product here</p>
+      </div>
+
+      <table align="center">
+        <tr>
+          <td>First Name:</td>
+          <td><input type="text" /></td>
+          <td>Last Name:</td>
+          <td><input type="text" /></td>
+        </tr>
+        <tr>
+          <td>Address #1:</td>
+          <td colspan="3"><input type="text" size="45" /></td>
+        </tr>
+        <tr>
+          <td>Address #2:</td>
+          <td colspan="3"><input type="text" size="45" /></td>
+        </tr>
+        <tr>
+          <td>City:</td>
+          <td><input type="text" /></td>
+          <td>State:</td>
+          <td>
+            <input type="text" size="3" />
+            Zip: <input type="text" size="8" />
+          </td>
+        </tr>
+        <tr>
+          <td>Country:</td>
+          <td colspan="3"><input type="text" value="United States" /></td>
+        </tr>
+        <tr>
+          <td colspan="4"><hr /></td>
+        </tr>
+        <tr>
+          <td>Product:</td>
+          <td colspan="3">
+            <select>
+              <option>ScanMaster</option>
+              <option>Printer</option>
+            </select>
+          </td>
+        </tr>
+        <tr>
+          <td>Date Purchased:</td>
+          <td colspan="3"><input type="text" /></td>
+        </tr>
+        <tr>
+          <td>Serial #:</td>
+          <td colspan="3"><input type="text" /></td>
+        </tr>
+        <tr>
+          <td>Used for:</td>
+          <td colspan="3">
+            <input type="radio" name="u" /> Home
+            <input type="radio" name="u" /> Educational Institution<br />
+            <input type="radio" name="u" checked /> Business
+            <input type="radio" name="u" /> Other<br />
+            <input type="radio" name="u" /> Government
+          </td>
+        </tr>
+        <tr>
+          <td>System:</td>
+          <td colspan="3">
+            <input type="checkbox" /> Windows
+            <input type="checkbox" /> UNIX<br />
+            <input type="checkbox" /> Macintosh <input type="checkbox" /> Other
+          </td>
+        </tr>
+        <tr>
+          <td colspan="4"><hr /></td>
+        </tr>
+        <tr>
+          <td>Comments?:</td>
+          <td colspan="3">
+            <textarea rows="5" cols="40"></textarea>
+          </td>
+        </tr>
+        <tr>
+          <td colspan="4" align="center">
+            <input type="submit" value="Click to register" />
+            <input type="reset" value="Click to cancel" />
+          </td>
+        </tr>
+      </table>
+    </form>
+  </body>
+</html>

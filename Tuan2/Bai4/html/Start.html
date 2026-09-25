@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+        body {
+            font-family: Arial, sans-serif;
+            background-color: white;
+        }
+
+        #wrapper {
+            width: 800px;
+            margin: 10px auto;
+            border: 1px solid white;
+        }
+
+        .top-bar {
+            display: flex;
+            justify-content: space-between;
+            padding: 5px 10px;
+            font-size: 14px;
+            font-weight: bold;
+            color: #333;
+        }
+
+        #header {
+            text-align: right;
+            padding: 10px 20px;
+            border-bottom: 2px solid #e67e22;
+        }
+        #header img {
+            width: 300px;
+        }
+
+        #container {
+            display: flex;
+        }
+
+        #menu {
+            width: 270px;
+            background: url('../img/back.jpg') repeat-y left top;
+            padding: 5px 25px 15px 10px; /* Padding trái nhỏ 10px để chữ sát mép,padding phải 25px để né phần viền rách */
+        }
+        #menu ul {
+            list-style: none;
+            padding: 0; 
+            margin: 0;
+        }
+        #menu ul li {
+            border-bottom: 1px dashed #c28e46; 
+            padding: 4px ; 
+            margin: 2px;
+        }
+        #menu ul li a {
+            text-decoration: none;
+            color: #4606a8; 
+            font-size: 13px;
+        }
+
+        #menu ul li a:hover {
+            color: #e67e22;
+        }
+
+        #content {
+            flex: 1;
+            padding: 15px 20px;
+        }
+
+        #content h2 {
+            color: #f39c12;
+            font-size: 20px;
+            margin-bottom: 15px;
+        }
+
+
+        .sample-box {
+            position: relative;
+            width: 440px;
+            margin: 10px auto;
+        }
+        .sample-box img {
+            width: 100%;
+            display: block;
+            border: 1px solid #333;
+        }
+        .note {
+            position: absolute;
+            background: white;
+            border: 1px solid #cca300;
+            padding: 6px 8px;
+            font-size: 10px;
+            color: #8b4513;
+            line-height: 1.3;
+            width: 140px;
+            box-shadow: 2px 2px 4px black;
+        }
+
+        .note-top-right {
+            top: -15px;
+            right: -30px;
+        }
+
+        .note-left {
+            top: 230px;
+            left: -35px;
+        }
+
+        .note-bottom-right {
+            bottom: 30px;
+            right: -20px;
+        }
+        #footer {
+            clear: both;
+            text-align: center;
+            padding: 10px;
+            font-size: 15px;
+            color: #f39c12;
+            border-top: 1px solid #e67e22;
+             background-color: #f1c40f;
+        }
+    </style>
+</head>
+<body>
+<div id="wrapper">
+    <div id="header">
+        <img src="../img/scraps.jpg" alt="ONLINE SCRAPBOOKS">
+    </div>
+
+    <div id="container">
+        <!-- Sidebar Menu bên trái -->
+        <div id="menu">
+            <ul>
+                <li><a href="Home.html"><strong>Home</strong></a></li>
+                <li><a href="Start.html">Getting Started</a></li>
+                <li><a href="#">Scrapbooking Tips</a></li>
+                <li><a href="#">Supply List</a></li>
+                <li><a href="#">Online Classes</a></li>
+                <li><a href="#">Sample Pages</a></li>
+                <li><a href="#">Online Store</a></li>
+                <li><a href="#">Shopping Cart</a></li>
+                <li><a href="#">Checkout</a></li>
+                <li><a href="#">Your Account</a></li>
+                <li><a href="#">Order Status</a></li>
+                <li><a href="#">Wish List</a></li>
+                <li><a href="#">Customer Service</a></li>
+                <li><a href="#">About Us</a></li>
+                <li><a href="#">Newsletter</a></li>
+                <li><a href="#">FAQ</a></li>
+                <li><a href="#">Contact Us</a></li>
+            </ul>
+        </div>
+
+        <div id="content">
+            <h2>Samples from Online Scrapbooks</h2>
+            <div class="sample-box">
+                <img src="../img/sample.jpg" alt="Sample Pages">
+                <div class="note note-top-right">
+                    Cascading Style Sheets (CSS) is a fantastic tool to add layout to your websites. It can save you a lot of time and it enables you to design websites in a completely new way. CSS is a must for anyone working with web design.
+                </div>
+                <div class="note note-left">
+                    This tutorial will get you started with CSS in just a few hours. It is easy to understand and it will teach you all the sophisticated techniques.
+                </div>
+                <div class="note note-bottom-right">
+                    Learning CSS is fun. As you go along through the tutorial, remember to take enough time to properly experiment with what you learn in each lesson.
+                </div>
+            </div>
+        </div>
+    </div>
+    <div id="footer">
+        sample page
+    </div>
+</div>
+
+</body>
+</html>

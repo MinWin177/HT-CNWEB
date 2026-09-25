@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+        body {
+            font-family: Arial, sans-serif;
+            background-color: white;
+        }
+
+        #wrapper {
+            width: 800px;
+            margin: 10px auto;
+            border: 1px solid white;
+        }
+
+        #header {
+            text-align: right;
+            padding: 10px 20px;
+            border-bottom: 2px solid #f3790f;
+        }
+        #header img {
+            width: 300px;
+        }
+
+        #container {
+            display: flex;
+        }
+
+        #menu {
+            width: 270px;
+            background: url('../img/back.jpg') repeat-y left top;
+            padding: 5px 25px 15px 10px; /* Padding trái nhỏ 10px để chữ sát mép,padding phải 25px để né phần viền rách */
+        }
+        #menu ul {
+            list-style: none;
+            padding: 0; 
+            margin: 0;
+        }
+        #menu ul li {
+            border-bottom: 2px dashed #c28e46; 
+            padding: 4px ; 
+            margin: 2px;
+        }
+        #menu ul li a {
+            text-decoration: none;
+            color: #4606a8; 
+            font-size: 13px;
+        }
+
+        #menu ul li a:hover {
+            color: #e67e22;
+        }
+
+        #content {
+            flex: 1;
+            padding: 15px 20px;
+            position: relative;
+        }
+
+        #content h2 {
+            color: #f39c12;
+            font-size: 20px;
+            margin-bottom: 15px;
+        }
+        #k1{
+            border: 4px solid #f39c12;
+            width: 200px;
+            position: absolute;
+            top: 150px;
+            right: 50px;
+        }
+        #k1 h3 {
+            color: rgb(231, 147, 12);
+            padding: 5px;
+            margin: 0;
+        }
+        #k1 ul li {
+           list-style-position: inside;
+            text-align: center;         
+ 
+        }
+        #footer {
+            clear: both;
+            text-align: center;
+            padding: 10px;
+            font-size: 15px;
+            color: #f39c12;
+            border-top: 1px solid #e67e22;
+            background-color: #f1c40f;
+            
+        }
+    </style>
+</head>
+<body>
+<div id="wrapper">
+    <div id="header">
+        <img src="../img/scraps.jpg" alt="ONLINE SCRAPBOOKS">
+    </div>
+
+    <div id="container">
+        <div id="menu">
+            <ul>
+                <li><a href="Home.html"><strong>Home</strong></a></li>
+                <li><a href="Start.html">Getting Started</a></li>
+                <li><a href="#">Scrapbooking Tips</a></li>
+                <li><a href="#">Supply List</a></li>
+                <li><a href="#">Online Classes</a></li>
+                <li><a href="#">Sample Pages</a></li>
+                <li><a href="#">Online Store</a></li>
+                <li><a href="#">Shopping Cart</a></li>
+                <li><a href="#">Checkout</a></li>
+                <li><a href="#">Your Account</a></li>
+                <li><a href="#">Order Status</a></li>
+                <li><a href="#">Wish List</a></li>
+                <li><a href="#">Customer Service</a></li>
+                <li><a href="#">About Us</a></li>
+                <li><a href="#">Newsletter</a></li>
+                <li><a href="#">FAQ</a></li>
+                <li><a href="#">Contact Us</a></li>
+            </ul>
+        </div>
+
+        <div id="content">
+            <h2>Getting Started</h2>
+            <p>Không có nội dung nào để hiện thị ạ</p>
+               <p>...........................</p>
+                <p>...........................</p>
+                   <p>...........................</p> 
+                     <p>...........................</p>
+            <h2>Preserving Your Memories</h2>
+            <p>...........................</p>
+            <div id="k1">
+                <h3>Basic Materials</h3>
+                <ul>
+                    <li>learn to each 1</li>
+                    <li>learn to each 2</li>
+                    <li>learn to each 3</li>
+                    <li>learn to each 4</li>
+                    <li>learn to each 5</li>
+                </ul>
+            </div>
+        </div>
+        
+    </div>
+    <div id="footer">
+        sample page
+    </div>
+</div>
+
+</body>
+</html>

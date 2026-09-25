@@ -1,0 +1,233 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        * {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-color: white;
+    color: white;
+    font-family: Arial, sans-serif;
+    margin: 0;
+    width: 80%;
+    height: 700px;
+    margin: 0 auto;
+
+}
+
+.container {
+    margin-top: 20px;
+    border: 1px solid #0b0b0b;
+    padding: 20px;
+    background-color: #5dade2;
+}
+
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 6px dotted white;
+    padding-bottom: 30px;
+    margin-bottom: 20px;
+}
+
+.nav a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    margin-right: 20px;
+    font-size: 1.1rem;
+}
+
+.logo {
+    font-family: "Arial Black", sans-serif;
+    color: white;
+    text-shadow: 8px 8px 8px navy;
+    margin: 0;
+}
+
+.main-content {
+    display: flex;
+    gap: 30px;
+}
+
+.col-left {
+    flex: 1;
+}
+
+.title {
+    margin-top: 0;
+    font-family: Georgia, serif;
+}
+
+.desc {
+    font-size: 0.9rem;
+    line-height: 1.4;
+    margin-bottom: 20px;
+}
+
+.form-row {
+    display: grid;
+    grid-template-columns: 140px 1fr;
+    margin-bottom: 10px;
+    align-items: center;
+}
+
+.form-row label {
+    font-size: 0.8rem;
+    font-weight: bold;
+}
+
+input,
+select,
+textarea {
+    width: 100%;
+    padding: 5px;
+    border: 1px solid #cecdcd;
+    border-radius: 4px;
+    font-family: Arial, sans-serif;
+    color: #555555;
+}
+
+.btn-group {
+    text-align: right;
+    margin-top: 10px;
+}
+
+button {
+    background: white;
+    border: 1px dashed #444343;
+    padding: 2px 10px;
+    cursor: pointer;
+    font-weight: bold;
+}
+
+.col-right {
+    flex: 1;
+    text-align: center;
+}
+
+.frame {
+    border: 1px solid #3e3d3d;
+    padding: 0;
+    margin-bottom: 20px;
+}
+
+.frame img {
+    width: 100%;
+}
+
+.slogan-main {
+    color: navy;
+    font-family: Georgia, serif;
+    font-weight: bold;
+    font-size: 1.8rem;
+    margin-bottom: 5px;
+    text-shadow: 2px 3px rgba(0, 0, 128, 0.412);
+}
+
+.slogan-sub {
+    color: navy;
+    font-weight: bold;
+    margin-top: 0;
+    text-shadow: 1px 2px rgba(0, 0, 128, 0.556);
+}
+
+.footer {
+    border-top: 6px dotted white;
+    margin-top: 30px;
+    padding-top: 10px;
+    text-align: center;
+    font-size: 0.8rem;
+}
+
+.student-info {
+    font-style: italic;
+}
+    </style>
+</head>
+<body>
+    <div class="container">
+        <header class="header">
+            <nav class="nav">
+                <a href="#">Home</a>
+                <a href="#">Products</a>
+                <a href="#">Services</a>
+                <a href="#">About</a>
+                <a href="#">Contact</a>
+            </nav>
+            <h1 class="logo">Sky World</h1>
+        </header>
+
+        <div class="main-content">
+            <section class="col-left">
+                <h2 class="title">Registration information</h2>
+                <p class="desc">Start your travel planning right now with our on-line tour registration form...</p>
+
+                <form class="reg-form">
+                    <div class="form-row">
+                        <label>Title</label>
+                        <select>
+                            <option>Mr.</option>
+                            <option>Ms.</option>
+                        </select>
+                    </div>
+
+                    <div class="form-row">
+                        <label>Full Name *</label>
+                        <input type="text" placeholder="First Name">
+                    </div>
+
+                    <div class="form-row">
+                        <label>Mailing Address</label>
+                        <input type="text" placeholder="Mailing Address">
+                    </div>
+
+                    <div class="form-row">
+                        <label>City</label>
+                        <input type="text" placeholder="City">
+                    </div>
+
+                    <div class="form-row">
+                        <label>Country</label>
+                        <input type="text" placeholder="Country">
+                    </div>
+
+                    <div class="form-row">
+                        <label>Specific questions or <br> requests about your tour</label>
+                        <textarea rows="4">Specific questions or requests about your tour</textarea>
+                    </div>
+
+                    <div class="btn-group">
+                        <button type="submit">Submit</button>
+                        <button type="reset">Reset</button>
+                    </div>
+                </form>
+            </section>
+
+            <section class="col-right">
+                <div class="frame">
+                    <img src="../img/sky.png" alt="">
+                </div>
+                <div class="slogan-box">
+                    <h2 class="slogan-main">You've arrived.</h2>
+                    <p class="slogan-sub">Journeys as great as the destinations.</p>
+                </div>
+            </section>
+        </div>
+
+        <footer class="footer">
+            <p>&copy; 2016 Sky World Tours. All rights reserved.</p>
+            <p class="student-info">Contact information: Vo Ha Minh Thang | 24643361 | 11/09/2026 </p>
+        </footer>
+    </div>
+
+</body>
+</html>

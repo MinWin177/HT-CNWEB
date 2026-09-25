@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="../../dist/css/bootstrap.min.css">
+    <script src="../../dist/js/bootstrap.bundle.min.js"></script>
+    <style>
+        body {
+    background-color: #1b3644;
+    color: white;
+    font-family: sans-serif;
+}
+
+
+.navbar-custom {
+    background-color: #313131;
+}
+
+.navbar-custom .navbar-brand {
+    font-size: 0.9rem;
+    font-weight: bold;
+    letter-spacing: 1px;
+    color: white;
+}
+
+.navbar-custom .nav-link {
+    font-size: 0.75rem;
+    color: #b5b5b5 !important;
+    text-transform: uppercase;
+}
+
+.navbar-custom .nav-link:hover {
+    color: white !important;
+}
+
+.btn-download {
+    background-color: #4da6c9;
+    color: white;
+    border: none;
+    font-size: 0.8rem;
+    font-weight: bold;
+    border-radius: 3px;
+}
+
+.btn-download:hover {
+    background-color: #3b8ba9;
+    color: white;
+}
+
+.restaurant-title {
+    font-family: 'Times New Roman', Times, serif;
+
+    font-size: 3.5rem;
+    margin-top: 50px;
+    margin-bottom: 50px;
+}
+
+
+.btn-new-menu {
+    background-color: #f04f6b;
+    color: white;
+    border: none;
+    padding: 12px 20px;
+    border-radius: 3px;
+}
+
+.btn-new-menu:hover {
+    background-color: #d63d57;
+    color: white;
+}
+
+.btn-terrace {
+    color: white;
+    border: 1px solid white;
+    padding: 12px 20px;
+    background: transparent;
+    border-radius: 3px;
+}
+
+.btn-terrace:hover {
+    background-color: rgba(255, 255, 255, 0.1);
+    color: white;
+}
+.content-text {
+    font-size: 0.9rem;
+    line-height: 1.7;
+    color: #d1d5d8;
+}
+</style>
+</head>
+<body>
+    <nav class="navbar navbar-expand-lg navbar-dark navbar-custom py-3">
+        <div class="container">
+            <a class="navbar-brand text-uppercase" href="#">Restaurant Template</a>
+
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-toggle="target"
+                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav mx-auto mb-2 mb-lg-0">
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown1" role="button"
+                            data-bs-toggle="dropdown" aria-expanded="false">
+                            Block Demos 1
+                        </a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown2" role="button"
+                            data-bs-toggle="dropdown" aria-expanded="false">
+                            Block Demos 2
+                        </a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown3" role="button"
+                            data-bs-toggle="dropdown" aria-expanded="false">
+                            Site Templates 1
+                        </a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown4" role="button"
+                            data-bs-toggle="dropdown" aria-expanded="false">
+                            Site Templates 2
+                        </a>
+                    </li>
+                </ul>
+                <button class="btn btn-download px-4 py-2">DOWNLOAD NOW!</button>
+            </div>
+        </div>
+    </nav>
+
+    <div class="container pb-5">
+        <h1 class="text-center restaurant-title">Restaurant</h1>
+
+        <div class="row align-items-center mt-5">
+
+            <div class="col-md-6 mb-4 mb-md-0">
+                <img src="../img/pizzas.jpg" alt="Pizza" class="img-fluid shadow">
+            </div>
+
+            <div class="col-md-6 d-flex flex-column align-items-center px-4">
+
+                <div class="d-grid gap-3 w-50 mb-5">
+                    <button class="btn btn-new-menu shadow-sm">New Menu</button>
+                    <button class="btn btn-terrace shadow-sm">Terrace</button>
+                </div>
+
+                <div class="w-100 px-lg-4">
+                    <p class="content-text text-start">
+                        The restaurant area allowed to accommodate a banquet hall, and a children hall, where children
+                        and their parents can fully enjoy the most interesting animation programs.
+                    </p>
+                </div>
+
+            </div>
+        </div>
+    </div>
+</body>
+</html>

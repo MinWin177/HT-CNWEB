@@ -1,0 +1,261 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+ * {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+    background-color:white;
+    color: #333;
+    line-height: 1.6;
+}
+
+#container {
+    max-width: 960px;
+    margin: 20px auto;
+    background-color:white;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+#header {
+    display: flex;
+    align-items: center;
+    padding: 20px 40px;
+    border-bottom: 1px solid white;
+    background-image: url(../img/background.png);
+}
+
+#logo-box {
+    margin-right: 20px;
+}
+
+#site-title {
+    font-family: "Georgia", serif;
+    font-size: 2.5rem;
+    color:white;
+    margin-bottom: 7px;
+}
+
+#site-subtitle {
+    font-size: 1rem;
+    color:white;
+    text-transform: uppercase;
+    letter-spacing: 1.5px;
+}
+#nav {
+    background-color: #333;
+}
+#nav-list {
+    list-style: none;
+    display: flex;
+    padding: 0 40px;
+}
+#nav-link {
+    display: block;
+    padding: 15px 20px;
+    color: white;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-size: 0.9rem;
+}
+#nav-link:hover {
+    background-color: #555;
+}
+
+#content-layout {
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    gap: 40px;
+    padding: 40px;
+}
+#course-item {
+    margin-bottom: 40px;
+    padding-bottom: 40px;
+    border-bottom: 1px solid white;
+    display: flex;
+    gap: 20px;
+}
+#course-item:last-child {
+    border-bottom: none;
+    margin-bottom: 0;
+    padding-bottom: 0;
+}
+#img-container {
+    flex: 0 0 200px;
+}
+#img-frame {
+    background: white;
+    padding: 5px;
+    border: 1px solid whitesmoke;
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.1);
+}
+#img-frame img {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+#img-caption {
+    text-align: center;
+    font-size: 0.85rem;
+    color: #666;
+    margin-top: 5px;
+    font-style: italic;
+}
+#course-details {
+    flex: 1;
+}
+#course-title {
+    color: #5a5151;
+    font-size: 1.5rem;
+    margin-bottom: 5px;
+}
+#course-subtitle {
+    font-weight: bold;
+    color: #e94290;
+    margin-bottom: 10px;
+}
+#sidebar-heading {
+    color: #f23594;
+    font-size: 1.2rem;
+    text-transform: uppercase;
+    padding-bottom: 10px;
+    margin-bottom: 20px;
+    margin-top: 0;
+}
+
+#mt-large {
+    margin-top: 40px;
+}
+
+#recipe-list {
+    list-style: none;
+}
+#recipe-list li {
+    margin-bottom: 27px;
+    border-bottom: 1px dotted #ec1e59;
+    padding-bottom: 5px;
+}
+
+#recipe-list a {
+    text-decoration: none;
+    color: #d12159;
+    font-weight: bold;
+}
+
+#recipe-list a:hover {
+    color: #ee1a76;
+}
+
+#recipe-list span {
+    font-size: 0.9rem;
+    color: #f11d80;
+}
+
+#site-footer {
+    background-color: #767070;
+    color: whitesmoke;
+    padding: 20px;
+    font-size: 0.85rem;
+    margin-top: 20px;
+}
+</style>
+</head>
+<body>
+        <div id="container">
+
+        <header id="header">
+            <div id="logo-box">
+                <img src="../img/logo.png" alt="Yoko's Kitchen Logo">
+            </div>
+            <div>
+                <h1 id="site-title">Yoko's Kitchen</h1>
+                <div id="site-subtitle">Japanese Cooking Classes</div>
+            </div>
+        </header>
+
+        <nav id="nav">
+            <ul id="nav-list">
+                <li><a id="nav-link" href="#">Home</a></li>
+                <li><a id="nav-link" href="#">Classes</a></li>
+                <li><a id="nav-link" href="#">Catering</a></li>
+                <li><a id="nav-link" href="#">About</a></li>
+                <li><a id="nav-link" href="#">Contact</a></li>
+            </ul>
+        </nav>
+
+        <div id="content-layout">
+
+            <section id="main-content">
+
+                <article id="course-item">
+                    <div id="img-container">
+                        <div id="img-frame">
+                            <img src="../img/teriyaki.jpg" alt="Bok Choi">
+                        </div>
+                        <div id="img-caption">Bok Choi</div>
+                    </div>
+                    <div id="course-details">
+                        <h2 id="course-title">Japanese Vegetarian</h2>
+                        <div id="course-subtitle">Five week course in London</div>
+                        <p>A five week introduction to traditional Japanese vegetarian meals, teaching you a
+                            selection of rice and noodle dishes.</p>
+                    </div>
+                </article>
+
+                <article id="course-item">
+                    <div id="img-container">
+                        <div id="img-frame">
+                            <img src="../img/teriyaki.jpg" alt="Teriyaki Sauce">
+                        </div>
+                        <div id="img-caption">Teriyaki Sauce</div>
+                    </div>
+                    <div id="course-details">
+                        <h2 id="course-title">Sauces Masterclass</h2>
+                        <div id="course-subtitle">One day workshop</div>
+                        <p>An intensive one-day course looking at how to create the most delicious sauces for use in
+                            a range of Japanese cookery.</p>
+                    </div>
+                </article>
+
+            </section>
+
+            <aside id="sidebar">
+
+                <h3 id="sidebar-heading">Popular Recipes</h3>
+                <ul id="recipe-list">
+                    <li>
+                        <a href="#">Yakitori</a> <span>(grilled chicken)</span>
+                    </li>
+                    <li>
+                        <a href="#">Tsukune</a> <span>(minced chicken patties)</span>
+                    </li>
+                    <li>
+                        <a href="#">Okonomiyaki</a>  <span>(savory pancakes)</span>
+                    </li>
+                    <li>
+                        <a href="#">Mizutaki</a> <span>(chicken stew)</span>
+                    </li>
+                </ul>
+                <h3 id="sidebar-heading" id="mt-large">Contact</h3>
+                <p>
+                    <strong>Yoko's Kitchen</strong><br>
+                    27 Redchurch Street<br>
+                    Shoreditch<br>
+                    London E2 7DP
+                </p>
+            </aside>
+        </div>
+        <footer id="site-footer">
+            &copy; 2011 Yoko's Kitchen
+        </footer>
+    </div>
+</body>
+</html>

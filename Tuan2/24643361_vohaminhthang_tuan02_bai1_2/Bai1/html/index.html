@@ -1,0 +1,347 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+body {
+    background-color: #fffbfb;
+}
+
+/* Khung tổng */
+#container {
+    width: 950px;
+    margin: 15px auto;
+    background-color: #f9f4f4;
+    border: 2px solid #d48080;
+}
+
+/* Header */
+#header {
+    text-align: center;
+    padding: 15px 0;
+    color: #7d2525;
+    font-style: italic;
+    text-shadow: 0 7px rgba(211, 75, 164, 0.322);
+}
+
+/* Thanh Menu trên */
+#navbar {
+    background-color: #e5989b;
+    display: flex;
+    align-items: center;
+    padding: 5px 15px;
+    border-top: 1px solid #c97375;
+    border-bottom: 1px solid #c97375;
+     
+}
+
+#navbar a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 10px;
+    margin-right: 25px;
+}
+
+#search-box {
+    margin-left: auto; /* Đẩy ô tìm kiếm sang góc phải */
+}
+
+#search-box input {
+    width: 120px;
+    height: 22px;
+    border: 1px solid #ccc;
+}
+
+#search-box button {
+    height: 22px;
+    padding: 0 5px;
+    font-size: 11px;
+    cursor: pointer;
+}
+
+/* Bố cục chính 3 cột */
+#main-content {
+    display: flex;
+}
+
+/* Cột trái */
+#left-sidebar {
+    width: 18%;
+    padding: 30px;
+}
+
+#btn-left {
+    display: block;
+    background-color: #e5989b;
+    color: white;
+    text-decoration: none;
+    padding: 6px 10px;
+    margin-bottom: 6px;
+    font-size: 11px;
+    border-radius: 4px; /* Bo góc nút bên trái */
+}
+
+#btn-left:hover {
+    background-color: #b04b4b; /* Hiệu ứng đổi màu khi di chuột */
+}
+
+
+#circle-image {
+    margin-top: 15px;
+    text-align: center;
+    
+}
+
+#circle-image img {
+    width: 130px;
+    height: 100px;
+    border-radius: 70%; /* Tạo hình tròn */
+    border: 3px solid #e5989b;
+    object-fit: cover;
+  box-shadow: 0 4px 8px rgba(240, 53, 175, 0.2),0 4px 8px rgba(236, 95, 187, 0.2),0 4px 8px rgba(228, 37, 161, 0.2); /* Tạo bóng đổ */
+}
+
+
+#content {
+    width: 54%;
+    padding: 30px;
+    border-left: 1px solid #eee;
+    border-right: 1px solid #eee;
+}
+
+#banner-title {
+    background-color: #e5989b;
+    color: rgb(126, 12, 69);
+    text-align: center;
+    font-weight: bold;
+    font-size: 18px;
+    padding: 4px 0;
+    margin: 10px 0;
+    letter-spacing: 3px;
+}
+
+#menu-list {
+    margin-left: 20px;
+    font-size: 13px;
+}
+
+#menu-list li {
+    margin-bottom: 4px;
+    color: black;
+}
+
+#menu-list span {
+    color: rgb(234, 19, 19);
+}
+
+#back-top {
+    display: block;
+    color: red;
+    font-size: 11px;
+    margin-bottom: 15px;
+}
+
+
+#info-form {
+    margin-top: 10px;
+}
+
+#form-row {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 8px;
+}
+
+#form-row input[type="text"], 
+#form-row input[type="email"],
+#form-row input[type="tel"],
+#form-row select {
+    width: 48%;
+    padding: 4px;
+    border: 1px solid #ccc;
+    font-size: 12px;
+}
+
+#radio-group {
+    width: 48%;
+    font-size: 12px;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+#form-row textarea {
+    width: 100%;
+    height: 50px;
+    border: 1px solid #ccc;
+    resize: none; /* Không cho kéo giãn textarea */
+}
+
+#form-row .form-actions button {
+    padding: 3px 10px;
+    font-size: 12px;
+    margin-right: 5px;
+    cursor: pointer;
+}
+
+
+#right-sidebar {
+    width: 28%;
+    background-color: #000;
+    color: white;
+    padding: 30px;
+}
+
+#right-sidebar h2 {
+    font-size: 18px;
+    margin-bottom: 10px;
+}
+
+#event-block {
+    margin-bottom: 15px;
+}
+
+#event-block h3 {
+    font-size: 13px;
+    margin-bottom: 5px;
+}
+
+#event-block img {
+    width: 100%;
+    height: auto;
+    margin-bottom: 5px;
+}
+
+#event-block p {
+    font-size: 11px;
+    line-height: 1.3;
+    color: #ccc;
+}
+
+#event-block a {
+    color: #e5989b;
+}
+
+#footer {
+    background-color: #e5989b;
+    color: white;
+    text-align: center;
+    padding: 8px 0;
+    font-size: 13px;
+    font-style: italic;
+}
+</style>
+<body>
+<div id="container">
+
+        <header id="header">
+            <h1>EXAMPLE CAFE MENU</h1>
+        </header>
+
+        <nav id="navbar">
+            <a href="#"><img src="../img/icons8-home-50.png" alt=""></a>
+            <a href="#">STARTER</a>
+            <a href="#">MAIN COURSES</a>
+            <a href="#">DESSERTS</a>
+            
+            <div id="search-box">
+                <input type="text">
+                <button>Go</button>
+            </div>
+        </nav>
+
+        <div id="main-content">
+            <aside id="left-sidebar">
+                <a href="#" id="btn-left">Cafe Latte</a>
+                <a href="#" id="btn-left">Capuchino</a>
+                <a href="#" id="btn-left">Ocean Blue</a>
+                <a href="#" id="btn-left">Ice-cream Cafe</a>
+                <a href="#" id="btn-left">Order Online</a>
+                
+                <div id="circle-image">
+                    <img src="../img/company.png" alt="Cafe Image">
+                </div>
+            </aside>
+            <main id="content">
+                <div id="banner-title">S t a r t e r</div>
+                <ul id="menu-list">
+                    <li>Chesmut and Mushroom Goujons <span>(v)</span></li>
+                    <li>Goat Cheese <span>(v)</span></li>
+                    <li><span style="color: #e39f0e;">HONEY SOY CHICKEN KEBABS</span> <span>(v)</span></li>
+                    <li>Seafood Salad <span>(v)</span></li>
+                </ul>
+                <a href="#" id="back-top">Back to Top</a>
+
+                <div id="banner-title">D e s s e r t s</div>
+                <ul id="menu-list">
+                    <li>Lemon Sorbet <span>(v)</span></li>
+                    <li>Chocolate Mud Pie <span>(v)</span></li>
+                    <li>Pecan Pie <span>(v)</span></li>
+                    <li>Selection of fine Cheeses from Around the World <span>(v)</span></li>
+                </ul>
+                <a href="#" id="back-top">Back to Top</a>
+                <div id="banner-title">I N F O R M A T I O N</div>
+                <form id="info-form">
+                    <div id="form-row">
+                        <input type="text" placeholder="First Name">
+                        <input type="text" placeholder="Last Name">
+                    </div>
+                    <div id="form-row">
+                        <input type="email" placeholder="Email">
+                        <input type="tel" placeholder="Telephone">
+                    </div>
+                    <div id="form-row">
+                        <select>
+                            <option>USA</option>
+                            <option>Vietnam</option>
+                        </select>
+                        <div id="radio-group">
+                            <label><input type="radio" name="nation"> Vietnamese</label>
+                            <label><input type="radio" name="nation"> Foreigner</label>
+                        </div>
+                    </div>
+                    <div id="form-row">
+                        <textarea placeholder="Comment"></textarea>
+                    </div>
+                    <div id="form-actions">
+                        <button type="submit">Submit</button>
+                        <button type="reset">Cancel</button>
+                    </div>
+                </form>
+            </main>
+            <aside id="right-sidebar">
+                <h2>Events</h2>
+                <div id="event-block">
+                    <h3>Regular Meetings</h3>
+                    <img src="../img/meeting.png" alt="">
+                    <p>Host your regular team meetings or activities in the comfort of your own private room. <a href="#">Read more...</a></p>
+                </div>
+
+                <div id="event-block">
+                    <h3>Product Launches</h3>
+                    <img src="../img/launch.png" alt="">
+                    <p>Launch your product with ease in a space that truly fits its image. <a href="#">Read more...</a></p>
+                </div>
+            </aside>
+
+        </div>
+        <footer id="footer">
+            ABC Company ® - 12345678 - abccoffee@gmail.com
+        </footer>
+
+    </div>
+
+</body>
+</html>
+
