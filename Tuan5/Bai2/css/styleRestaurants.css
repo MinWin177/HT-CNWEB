@@ -1,0 +1,96 @@
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@700&family=Open+Sans:wght@400;600&display=swap');
+
+:root {
+    --primary-color: #ffbe33;
+    --dark-bg: #222831;
+    --text-light: #ffffff;
+    --text-dark: #000000;
+}
+
+body {
+    
+    font-family: 'Open Sans', sans-serif;
+}
+
+.brand-font {
+    font-family: 'Dancing Script', cursive;
+}
+
+.text-primary-custom {
+    color: var(--primary-color) !important;
+}
+
+.bg-dark-custom {
+    background-color: var(--dark-bg) !important;
+}
+
+.navbar-custom {
+    background-color: var(--dark-bg);
+    padding: 15px 0;
+}
+
+.navbar-custom .navbar-brand {
+    color: var(--text-light);
+    font-size: 2rem;
+}
+
+.navbar-custom .nav-link {
+    color: var(--text-light);
+    text-transform: uppercase;
+    font-size: 14px;
+    margin: 0 10px;
+}
+
+.navbar-custom .nav-link:hover,
+.navbar-custom .nav-link.active {
+    color: var(--primary-color);
+}
+
+.btn-custom {
+    background-color: var(--primary-color);
+    color: var(--text-light);
+    border-radius: 45px;
+    padding: 8px 30px;
+    border: none;
+    transition: 0.3s;
+}
+
+.btn-custom:hover {
+    background-color: #e6aa2c;
+    color: var(--text-light);
+}
+
+.menu-card {
+    border: none;
+    border-radius: 15px;
+    overflow: hidden;
+    background-color: #f1f2f3;
+}
+
+.menu-card .card-img-top {
+    padding: 20px;
+    background-color: #f1f2f3;
+    border-bottom-left-radius: 45px;
+}
+
+.menu-card .card-body {
+    background-color: var(--dark-bg);
+    color: var(--text-light);
+    border-top-right-radius: 45px;
+}
+
+.btn-cart {
+    background-color: var(--primary-color);
+    color: #fff;
+    border-radius: 50%;
+    width: 40px;
+    height: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.form-control {
+    border-radius: 5px;
+    margin-bottom: 15px;
+}

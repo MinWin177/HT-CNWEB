@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="../css/bootstrap.min.css">
+    <link rel="stylesheet" href="../css/styleRestaurants.css">
+    <script src="../js/bootstrap.bundle.min.js"></script>
+    <style>
+        .order-overlay {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: rgba(0, 0, 0, 0.7);
+            z-index: 1000;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+    </style>
+</head>
+<body class="bg-dark-custom">
+
+    <nav class="navbar navbar-expand-lg navbar-custom">
+        <div class="container">
+            <a class="navbar-brand brand-font" href="home.html">Feane</a>
+            <button class="navbar-toggler text-white" type="button" data-bs-toggle="collapse"
+                data-bs-target="#navbarNav">
+                <i class="fas fa-bars"></i>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav mx-auto">
+                    <li class="nav-item"><a class="nav-link text-primary-custom" href="home.html">Home</a></li>
+                    <li class="nav-item"><a class="nav-link" href="menu.html">Menu</a></li>
+                    <li class="nav-item"><a class="nav-link" href="about.html">About</a></li>
+                    <li class="nav-item"><a class="nav-link" href="book.html">Book Table</a></li>
+                </ul>
+                <div class="d-flex align-items-center">
+                    <a href="#" class="text-white me-3"><i class="fas fa-user"></i></a>
+                    <a href="#" class="text-white me-3"><i class="fas fa-shopping-cart"></i></a>
+                    <a href="#" class="text-white me-3"><i class="fas fa-search"></i></a>
+                    <a href="order.html" class="btn btn-custom">Order Online</a>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <div class="order-overlay">
+        <div class="card w-100" style="max-width: 500px; border-radius: 0;">
+            <div class="card-header bg-white d-flex justify-content-between align-items-center py-3 border-bottom-0">
+                <h4 class="brand-font text-primary-custom mb-0">Order</h4>
+                <a href="home.html" class="btn-close" aria-label="Close"></a>
+            </div>
+            <div class="card-body">
+                <form>
+                    <div class="mb-3">
+                        <label class="form-label small">Telephone</label>
+                        <input type="tel" class="form-control border-warning" style="border-radius: 10px;">
+                    </div>
+                    <div class="mb-3">
+                        <label class="form-label small">Email</label>
+                        <input type="email" class="form-control border-warning" style="border-radius: 10px;">
+                    </div>
+                    <div class="mb-4 form-check">
+                        <input type="checkbox" class="form-check-input" id="checkMeOut">
+                        <label class="form-check-label small" for="checkMeOut">Check me out</label>
+                    </div>
+                    <div class="text-end border-top pt-3">
+                        <button type="submit" class="btn btn-warning text-white rounded-0 px-4">Order</button>
+                        <a href="home.html" class="btn btn-warning text-white rounded-0 px-4">Close</a>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+
+</body>
+</html>

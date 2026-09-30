@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Feane - Fast Food Restaurant</title>
+  <link rel="icon" href="../img/favicon.png" type="image/png">
+  
+  <script src="../js/bootstrap.bundle.min.js"></script>
+  <link rel="stylesheet" href="../css/bootstrap.min.css">
+  <!-- Font Awesome Icons -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  <style>
+    body {
+      font-family: 'Open Sans', sans-serif;
+      background-color: #1a1e23;
+      color: #ffffff;
+      margin: 0;
+    }
+    
+    .font-cursive {
+      font-family: 'Dancing Script', cursive;
+    }
+
+    /* Header & Navigation */
+    .navbar {
+      background-color: transparent !important;
+      padding-top: 20px;
+      padding-bottom: 20px;
+    }
+    
+    .navbar-brand {
+      font-size: 2.2rem;
+      font-weight: bold;
+    }
+
+    .nav-link {
+      color: #ffffff !important;
+      font-weight: 600;
+      font-size: 0.9rem;
+      margin: 0 12px;
+      text-transform: uppercase;
+    }
+
+    .nav-link.active, .nav-link:hover {
+      color: #ffbe33 !important;
+    }
+
+    .nav-icons a {
+      color: #ffffff;
+      margin-left: 15px;
+      font-size: 0.95rem;
+      text-decoration: none;
+      transition: color 0.3s;
+    }
+
+    .nav-icons a:hover {
+      color: #ffbe33;
+    }
+
+    .btn-warning-custom {
+      background-color: #ffbe33;
+      color: #ffffff;
+      border-radius: 30px;
+      padding: 8px 28px;
+      border: none;
+      font-weight: 600;
+      font-size: 0.95rem;
+      text-decoration: none;
+      display: inline-block;
+      transition: background-color 0.3s;
+    }
+
+    .btn-warning-custom:hover {
+      background-color: #e6a728;
+      color: #ffffff;
+    }
+
+    /* Hero Section */
+    .hero-section {
+      position: relative;
+      background: url('../img/hero-bg.jpg') center right / cover no-repeat;
+      min-height: calc(100vh - 90px);
+      display: flex;
+      align-items: center;
+    }
+
+    .hero-content {
+      max-width: 520px;
+    }
+
+    .hero-title {
+      font-size: 3.8rem;
+      margin-bottom: 15px;
+      line-height: 1.1;
+    }
+
+    .hero-text {
+      color: #b0b0b0;
+      font-size: 0.9rem;
+      line-height: 1.6;
+      margin-bottom: 25px;
+    }
+
+    /* Carousel Indicators / Dots */
+    .slider-dots {
+      display: flex;
+      gap: 6px;
+      margin-top: 50px;
+    }
+
+    .dot {
+      width: 10px;
+      height: 10px;
+      background-color: #ffffff;
+      border-radius: 50%;
+      display: inline-block;
+      cursor: pointer;
+    }
+
+    .dot.active {
+      background-color: #ffbe33;
+      width: 12px;
+      height: 12px;
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Navigation Bar -->
+  <nav class="navbar navbar-expand-lg navbar-dark container">
+    <a class="navbar-brand font-cursive text-white" href="home.html">Feane</a>
+    
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    
+    <div class="collapse navbar-collapse" id="navbarNav">
+      <ul class="navbar-nav mx-auto">
+        <li class="nav-item"><a class="nav-link active" href="home.html">HOME</a></li>
+        <li class="nav-item"><a class="nav-link" href="menu.html">MENU</a></li>
+        <li class="nav-item"><a class="nav-link" href="about.html">ABOUT</a></li>
+        <li class="nav-item"><a class="nav-link" href="book.html">BOOK TABLE</a></li>
+      </ul>
+      
+      <div class="nav-icons d-flex align-items-center">
+        <a href="#"><i class="fas fa-user"></i></a>
+        <a href="order.html"><i class="fas fa-shopping-cart"></i></a>
+        <a href="#"><i class="fas fa-search"></i></a>
+        <a href="order.html" class="btn-warning-custom ms-3">Order Online</a>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Hero Section -->
+  <section class="hero-section">
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-6 col-md-8">
+          <div class="hero-content">
+            <h1 class="hero-title font-cursive">Fast Food Restaurant</h1>
+            <p class="hero-text">
+              Doloremque, tui tempora aperiam tui harum obcaecati rerum doloribus omnis temporibus tui dolor dolor sit amet consectetur adipisicing elit. Facilis harum, veritatis amet accusamus.
+            </p>
+            <a href="order.html" class="btn-warning-custom">Order Now</a>
+            
+            <!-- Slide Indicator Dots -->
+            <div class="slider-dots">
+              <span class="dot active"></span>
+              <span class="dot"></span>
+              <span class="dot"></span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+</body>
+</html>

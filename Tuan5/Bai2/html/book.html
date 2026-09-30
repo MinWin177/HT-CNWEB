@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="../css/bootstrap.min.css">
+    <link rel="stylesheet" href="../css/styleRestaurants.css">
+    <script src="../js/bootstrap.bundle.min.js"></script>
+</head>
+<body>
+   <nav class="navbar navbar-expand-lg navbar-custom">
+        <div class="container">
+            <a class="navbar-brand brand-font" href="home.html">Feane</a>
+            <button class="navbar-toggler text-white" type="button" data-bs-toggle="collapse"
+                data-bs-target="#navbarNav">
+                <i class="fas fa-bars"></i>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav mx-auto">
+                    <li class="nav-item"><a class="nav-link text-primary-custom" href="home.html">Home</a></li>
+                    <li class="nav-item"><a class="nav-link" href="menu.html">Menu</a></li>
+                    <li class="nav-item"><a class="nav-link" href="about.html">About</a></li>
+                    <li class="nav-item"><a class="nav-link" href="book.html">Book Table</a></li>
+                </ul>
+                <div class="d-flex align-items-center">
+                    <a href="#" class="text-white me-3"><i class="fas fa-user"></i></a>
+                    <a href="#" class="text-white me-3"><i class="fas fa-shopping-cart"></i></a>
+                    <a href="#" class="text-white me-3"><i class="fas fa-search"></i></a>
+                    <a href="order.html" class="btn btn-custom">Order Online</a>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <section class="container py-5">
+        <h2 class="brand-font display-5 mb-4">Book A Table</h2>
+        <div class="row">
+            <div class="col-md-6">
+                <form>
+                    <input type="text" class="form-control form-control-lg mb-3" placeholder="Your Name">
+                    <input type="tel" class="form-control form-control-lg mb-3" placeholder="Phone Number">
+                    <input type="email" class="form-control form-control-lg mb-3" placeholder="Your Email">
+                    <select class="form-select form-select-lg mb-3">
+                        <option selected>How many persons?</option>
+                        <option value="1">1</option>
+                        <option value="2">2</option>
+                        <option value="3">3</option>
+                        <option value="4">4+</option>
+                    </select>
+                    <input type="date" class="form-control form-control-lg mb-4">
+                    <button type="submit" class="btn btn-custom w-50">BOOK NOW</button>
+                </form>
+            </div>
+            <div class="col-md-6">
+                <!-- Sửa class h-10 thành h-100 và thêm w-100 object-fit-cover cho thẻ img để map lấp đầy khung -->
+                <div class="rounded overflow-hidden h-100" style="min-height: 350px;">
+                    <img src="../img/map.png" class="w-100 h-100" style="object-fit: contain;" alt="Map">
+                </div>
+            </div>
+        </div>
+    </section>
+</body>
+</html>

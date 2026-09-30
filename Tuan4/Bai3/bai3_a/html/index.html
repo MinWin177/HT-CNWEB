@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="../css/bootstrap.min.css">
+    <script src="../js/bootstrap.bundle.min.js"></script>
+    <style>
+         
+        .page-background {
+            background-color: #7b7b7b;
+            height: 100vh;
+            padding: 20px;
+        }
+
+        .btn-trigger {
+            background-color: #174291;
+            color: white;
+            border-radius: 2px;
+        }
+
+        .btn-trigger:hover {
+            background-color: #0d2a60;
+            color: white;
+        }
+    </style>
+</head>
+<body>
+    <div class="page-background">
+        <button type="button" class="btn btn-trigger px-4 py-2" data-bs-toggle="modal" data-bs-target="#loginModal">
+            Login
+        </button>
+    </div>
+
+    <div class="modal fade" id="loginModal" tabindex="-1" aria-labelledby="loginModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+
+                <div class="modal-header">
+                    <h4 class="modal-title" id="loginModalLabel">Login</h4>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+
+                <div class="modal-body">
+                    <form>
+                        <div class="mb-3">
+                            <label for="emailInput" class="form-label">Email</label>
+                            <input type="email" class="form-control" id="emailInput" placeholder="Email">
+                        </div>
+                        <div class="mb-4">
+                            <label for="passwordInput" class="form-label">Password</label>
+                            <input type="password" class="form-control" id="passwordInput" placeholder="Password">
+                        </div>
+                        <button type="submit" class="btn btn-primary px-4 rounded-1">Submit</button>
+                    </form>
+                </div>
+
+                <div class="modal-footer border-top-0 pt-0">
+                    <button type="button" class="btn btn-danger rounded-1" data-bs-dismiss="modal">Close</button>
+                </div>
+
+            </div>
+        </div>
+    </div>
+</body>
+</html>
