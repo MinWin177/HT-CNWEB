@@ -4,9 +4,38 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-    <script src="../js/vidu1cjava.js"> </script>
+    <script src="../js/vidu1cjava.js"></script>
+    <script>
+        function kttuoi() {
+            var nsValue = document.getElementById("ns").value;
+            if (!nsValue) {
+                document.getElementById("kq").innerHTML = "Vui lòng nhập ngày sinh";
+                return false;
+            }
+
+            var ns = new Date(nsValue);
+            var crr = new Date();
+            var tuoi = crr.getFullYear() - ns.getFullYear();
+
+            if (tuoi >= 18) {
+                document.getElementById("kq").innerHTML = "Bạn đủ tuổi";
+                return true;
+            } else {
+                document.getElementById("kq").innerHTML = "Bạn chưa đủ tuổi";
+                return false;
+            }
+        }
+    </script>
 </head>
 <body>
-    
+    <div class="container">
+        <h1>Kiểm tra tuổi</h1>
+        <form onsubmit="return kttuoi()">
+            <label for="ns">Nhập ngày sinh:</label>
+            <input type="date" id="ns" name="ns" required onblur="kttuoi()">
+            <button type="submit">Kiểm tra</button>
+        </form>
+        <p id="kq"></p>
+    </div>
 </body>
 </html>

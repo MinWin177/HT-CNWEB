@@ -1,0 +1,447 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="../css/bootstrap.min.css">
+    <script src="../js/bootstrap.min.js"></script>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 20px;
+            background-color: #fff;
+        }
+        
+        .container {
+            max-width: 1000px;
+            margin: 0 auto;
+            border: 1px solid #000;
+        }
+        
+        .header {
+            background-color: #335179;
+            color: white;
+            height: 110px;
+            display: flex;
+            justify-content: space-between;
+            align-items: flex-end;
+            padding: 0 0 0 20px;
+        }
+        
+        .header-left {
+            display: flex;
+            align-items: center;
+            gap: 10px;
+            margin-bottom: 25px;
+        }
+        
+        .logo-text h1 {
+            margin: 0;
+            font-family: "Times New Roman", serif;
+            font-size: 2.5rem;
+            font-weight: normal;
+            line-height: 1;
+        }
+        
+        .logo-text p {
+            margin: 5px 0 0 0;
+            font-size: 0.9rem;
+            color: white;
+            font-family: serif;
+        }
+        
+        .header-right {
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            height: 100%;
+            width: 60%;
+            align-items: flex-end;
+        }
+        
+        .search-box {
+            margin-top: 15px;
+            margin-right: 15px;
+            display: flex;
+        }
+        
+        .search-box input {
+            background-color: #10233a;
+            border: 1px solid #4a6fa5;
+            color: #ccc;
+            padding: 4px 8px;
+            font-size: 0.8rem;
+            width: 150px;
+        }
+        
+        .search-box button {
+            background-color: #10233a;
+            border: 1px solid #4a6fa5;
+            border-left: none;
+            color: white;
+            font-weight: bold;
+            font-size: 0.8rem;
+            cursor: pointer;
+            padding: 0 10px;
+            margin-left: 20px;
+        }
+        
+        .main-nav {
+            display: flex;
+            gap: 3px;
+            margin-left: 20px;
+        }
+        
+        .main-nav a {
+            text-decoration: none;
+            color: white;
+            background-color: #3b6ea5;
+            padding: 8px 15px;
+            font-weight: bold;
+            font-size: 0.9rem;
+            min-width: 80px;
+            text-align: center;
+        }
+        
+        .main-nav a:hover,
+        .main-nav a.active {
+            background-color: #5d8cc0;
+        }
+        
+        .main-body {
+            padding: 20px;
+        }
+        
+        .page-title {
+            color: #555;
+            margin-bottom: 5px;
+        }
+        
+        .dotted-line {
+            border: none;
+            border-top: 2px dotted #ccc;
+            margin-bottom: 20px;
+        }
+        
+        .grid-layout {
+            display: flex;
+            gap: 30px;
+        }
+        
+        .col-form {
+            flex: 2;
+        }
+        
+        .text {
+            color: rgb(235, 56, 25);
+            font-style: italic;
+            font-size: 0.9rem;
+            margin-bottom: 15px;
+        }
+        
+        .form-row {
+            display: flex;
+            gap: 20px;
+            margin-bottom: 15px;
+        }
+        
+        .field {
+            width: 100%;
+        }
+        
+        label {
+            display: block;
+            font-weight: bold;
+            margin-bottom: 5px;
+            font-size: 0.9rem;
+            color: #777;
+        }
+        
+        input,
+        textarea {
+            width: 100%;
+            padding: 8px;
+            border: 1px solid #ccc;
+            background: #f9f9f9;
+            box-sizing: border-box;
+        }
+        
+        .col-info {
+            flex: 1;
+        }
+        
+        .col-ads {
+            background-color: #f1ebeb;
+            flex: 1;
+        }
+        
+        .section-title {
+            color: #221a1ab8;
+            border-bottom: 2px dotted #ccc;
+            padding-bottom: 10px;
+            margin-top: 0;
+            font-size: 1.3rem;
+        }
+        
+        .info-content {
+            font-size: 0.85rem;
+            line-height: 1.6;
+        }
+        
+        .ad-box img {
+            width: 100%;
+            border: 4px solid white;
+            box-shadow: 0 0 5px #ccc;
+            margin-bottom: 10px;
+        }
+        
+        .ad-box p {
+            font-size: 0.85rem;
+            text-align: justify;
+            padding: 10px;
+        }
+        
+        .read-more {
+            float: right;
+            color: #2c3e50;
+            font-weight: bold;
+            font-size: 0.8rem;
+            text-decoration: none;
+        }
+        
+        .footer {
+            background-color: #1a252f;
+            color: white;
+            padding: 15px;
+            font-size: 0.8rem;
+            text-align: left;
+        }
+
+        /* CSS cho phần thông báo lỗi và khung đăng nhập */
+        .loi {
+            color: red;
+            font-size: 0.8rem;
+            margin-top: 3px;
+        }
+        .login-box {
+            background: #f1f5f9;
+            padding: 15px;
+            margin-bottom: 20px;
+            border: 1px solid #cbd5e1;
+        }
+    </style>
+
+    <script>
+        // 1. Kiểm tra Tên (Giữ nguyên cấu trúc cơ bản của bạn)
+        function ktten() {
+            var ten = document.getElementById("ten").value;
+            var Ten = /^[A-Z]+(\s[A-Z]+)+$/;
+            if (Ten.test(ten)) {
+                document.getElementById("tbten").innerHTML = "Ok";
+                return true;
+            } else {
+                document.getElementById("tbten").innerHTML = "Tên không hợp lệ (VD: NGUYEN VAN A)";
+                return false;
+            }
+        }
+
+        // 2. Kiểm tra Số điện thoại (Bắt đầu bằng số 0, đủ 10 số)
+        function ktsdt() {
+            var sdt = document.getElementById("sdt").value;
+            var Sdt = /^0\d{9}$/;
+            if (Sdt.test(sdt)) {
+                document.getElementById("tbsdt").innerHTML = "Ok";
+                return true;
+            } else {
+                document.getElementById("tbsdt").innerHTML = "SĐT không hợp lệ (10 số, bắt đầu bằng 0)";
+                return false;
+            }
+        }
+
+        // 3. Kiểm tra Email cơ bản
+        function ktemail() {
+            var email = document.getElementById("email").value;
+            var Email = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+            if (Email.test(email)) {
+                document.getElementById("tbemail").innerHTML = "Ok";
+                return true;
+            } else {
+                document.getElementById("tbemail").innerHTML = "Email không hợp lệ (VD: abc@gmail.com)";
+                return false;
+            }
+        }
+
+        // 4. Kiểm tra Địa chỉ (Không được để trống)
+        function ktdiachi() {
+            var diachi = document.getElementById("diachi").value;
+            if (diachi != "") {
+                document.getElementById("tbdiachi").innerHTML = "Ok";
+                return true;
+            } else {
+                document.getElementById("tbdiachi").innerHTML = "Địa chỉ không được để trống";
+                return false;
+            }
+        }
+
+        // 5. Kiểm tra form Đăng nhập
+        function ktlogin() {
+            var user = document.getElementById("user").value;
+            var pass = document.getElementById("pass").value;
+            if (user == "" || pass == "") {
+                alert("Vui lòng nhập đầy đủ tên đăng nhập và mật khẩu!");
+                return false;
+            }
+            alert("Đăng nhập thành công!");
+            return true;
+        }
+    </script>
+</head>
+<body>
+    <div class="container">
+        <header class="header">
+            <div class="header-left">
+                <div>
+                    <img src="../img/flower.png" style="height: 80px;" alt="">
+                </div>
+                <div class="logo-text">
+                    <h1>FlowerBox 360</h1>
+                    <p>...to get your daily dose of luxury roses!</p>
+                </div>
+            </div>
+
+            <div class="header-right">
+                <div class="search-box">
+                    <input type="text" placeholder="Search the site...">
+                    <button>GO</button>
+                </div>
+
+                <nav class="main-nav">
+                    <a href="#" class="active">Home</a>
+                    <a href="#">Promotion</a>
+                    <a href="#">Gift Baskets</a>
+                    <a href="#">Flower Services</a>
+                    <a href="#">About</a>
+                </nav>
+            </div>
+        </header>
+
+        <div class="main-body">
+
+            <!-- THÊM Ô ĐĂNG NHẬP -->
+            <div class="login-box">
+                <h3 class="section-title" style="font-size: 1rem; margin-bottom: 10px;">Đăng Nhập Hệ Thống</h3>
+                <form onsubmit="return ktlogin()">
+                    <div class="form-row" style="margin-bottom: 10px;">
+                        <div class="field">
+                            <input type="text" id="user" placeholder="Tên đăng nhập">
+                        </div>
+                        <div class="field">
+                            <input type="password" id="pass" placeholder="Mật khẩu">
+                        </div>
+                        <div>
+                            <button type="submit" style="padding: 8px 15px; background: #335179; color: white; border: none; cursor: pointer;">Login</button>
+                        </div>
+                    </div>
+                </form>
+            </div>
+
+            <h2 class="page-title">Why Not Contact Us Today!</h2>
+            <hr class="dotted-line">
+
+            <div class="grid-layout">
+
+                <section class="col-form">
+                    <p class="text">
+                        Why Not Contact Us Today! For FlowerBox 360 shoppers, that means not only can you send your friends and loved ones the highest quality flowers found online, but that you can do so at a great value. FlowerBox 360 Info!
+                    </p>
+
+                    <form>
+                        <div class="form-row">
+                            <div class="field">
+                                <label>Name:</label>
+                                <input type="text" name="ten" id="ten" onblur="ktten()">
+                                <div id="tbten" class="loi"></div>
+                            </div>
+                            <div class="field">
+                                <label>Email:</label>
+                                <input type="text" name="email" id="email" onblur="ktemail()">
+                                <div id="tbemail" class="loi"></div>
+                            </div>
+                        </div>
+
+                        <div class="form-row">
+                            <div class="field">
+                                <label>Telephone:</label>
+                                <input type="text" name="sdt" id="sdt" onblur="ktsdt()">
+                                <div id="tbsdt" class="loi"></div>
+                            </div>
+                            <div class="field">
+                                <label>Address (Địa chỉ):</label>
+                                <input type="text" name="diachi" id="diachi" onblur="ktdiachi()">
+                                <div id="tbdiachi" class="loi"></div>
+                            </div>
+                        </div>
+
+                        <div class="form-row">
+                            <div class="field">
+                                <label>Subject:</label>
+                                <input type="text">
+                            </div>
+                        </div>
+
+                        <div class="form-row">
+                            <div class="field">
+                                <label>Message:</label>
+                                <textarea rows="4"></textarea>
+                            </div>
+                        </div>
+
+                        <div class="btn-group">
+                            <button type="submit">Submit</button>
+                            <button type="reset">Reset</button>
+                        </div>
+                    </form>
+                </section>
+
+                <section class="col-info">
+                    <h3 class="section-title">FlowerBox 360 Info!</h3>
+                    <div class="info-content">
+                        Operating Hours:
+                        <br>
+                        <p>Monday-Friday:9:00am-5:00pm Saturday:9:00am-1:00pm. Sunday:Closed (No Deliveries) ORDER ONLINE 24/7</p>
+                        <br>
+                        <p>Software Engineering Dept. Information Technology Faculty First Floor, H Building</p>
+                        <br>
+                        <p>12 Nguyen Van Bao, Ward 4, Go Vap District, Ho Chi Minh City <br> Tel: 0283.8940 390
+                            <br>Fax: 0283.9940 954</p>
+                    </div>
+                </section>
+
+                <section class="col-ads">
+                    <h3 class="section-title">Discounts & Specials</h3>
+                    <div class="ad-box">
+                        <img src="../img/rose.png" alt="Rose">
+                        <p>FlowerBox 360 offers many great discounts throughout the year, from coupons and coupon codes, to promo codes and other savings. We also offer military flower discounts to our wonderful troops!</p>
+                        <a href="#" class="read-more">Read More >></a>
+                    </div>
+                </section>
+
+            </div>
+        </div>
+
+        <footer class="footer">
+            Copyright © 2017 - All Rights Reserved - Software Engineering Department - Industrial University of Ho Chi Minh City
+        </footer>
+    </div>
+</body>
+
+</html>

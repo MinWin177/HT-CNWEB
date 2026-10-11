@@ -32,6 +32,77 @@
             color: white;
         }
     </style>
+    <script>
+        function ktuser() {
+            var user = document.getElementById("username").value;
+            var User = /^[a-zA-Z0-9]+$/;
+            if (User.test(user)) {
+                document.getElementById("tbuser").innerHTML = "Hop le";
+                return true;
+            } else {
+                document.getElementById("tbuser").innerHTML = "Username khong hop le";
+                return false;
+            }
+        }
+        function ktemail() {
+            var email = document.getElementById("email").value;
+            var Email = /^[A-Za-z]+[\d_]\@[A-Za-z]{5,7}\.[A-Za-z]{3}$/;
+            if (Email.test(email)) {
+                document.getElementById("tbemail").innerHTML = "hop le";
+                return true;
+            } else {
+                document.getElementById("tbemail").innerHTML = "email khong hop le";
+                return false;
+            }
+        }
+
+        function ktpass() {
+            var pass = document.getElementById("pass").value;
+            var Pass = /^.{6,}$/;
+            if (Pass.test(pass)) {
+                document.getElementById("tbpass").innerHTML = "hop le";
+                return true;
+            } else {
+                document.getElementById("tbpass").innerHTML = "mat khau toi thieu 6 ky tu";
+                return false;
+            }
+        }
+
+        function ktsdt() {
+            var sdt = document.getElementById("sdt").value;
+            var Sdt = /^0\d{9}$/;
+            if (Sdt.test(sdt)) {
+                document.getElementById("tbsdt").innerHTML = "hop le";
+                return true;
+            } else {
+                document.getElementById("tbsdt").innerHTML = "sdt phai co 10 so va bat dau bang 0";
+                return false;
+            }
+        }
+
+        function ktten() {
+            var ten = document.getElementById("ten").value;
+            var Ten = /^[A-Z]+(\s[A-Z]+)+$/;
+            if (Ten.test(ten)) {
+                document.getElementById("tbten").innerHTML = "hop le";
+                return true;
+            } else {
+                document.getElementById("tbten").innerHTML = "ten khong hop le";
+                return false;
+            }
+        }
+        function ktcompany() {
+            var company = document.getElementById("companyName").value;
+            var Company = /^[A-Z]+(\s[A-Z]+)+$/;
+            if (Company.test(company)) {
+                document.getElementById("tbcompany").innerHTML = "hop le";
+                return true;
+            } else {
+                document.getElementById("tbcompany").innerHTML = "ten cong ty khong hop le";
+                return false;
+            }
+        }
+    </script>
 </head>
 <body>
     <div class="container mt-4">
@@ -40,38 +111,44 @@
 
                 <div class="col-md-6">
                     <label class="form-label">Username*</label>
-                    <input type="text" class="form-control" placeholder="Choose your username">
+                    <input type="text" class="form-control" placeholder="Choose your username" id="username" onblur="ktuser()">
+                    <span id="tbuser" class="text-danger"></span>
                 </div>
                 <div class="col-md-6">
                     <label class="form-label">Company name*</label>
-                    <input type="text" class="form-control" placeholder="your company name">
+                    <input type="text" class="form-control" placeholder="your company name" id="companyName" onblur="ktcompany()">
+                    <span id="tbcompany" class="text-danger"></span>
                 </div>
 
                 <div class="col-md-6">
                     <label class="form-label">E-mail*</label>
-                    <input type="email" class="form-control" placeholder="Your current email address">
+                    <input type="email" class="form-control" placeholder="Your current email address" id="email" onblur="ktemail()">
+                    <span id="tbemail" class="text-danger"></span>
                 </div>
                 <div class="col-md-6">
                     <label class="form-label">Category*</label>
-                    <input type="text" class="form-control" placeholder="skills catagory">
+                    <input type="text" class="form-control" placeholder="skills catagory" id="category">
                 </div>
 
                 <div class="col-md-6">
                     <label class="form-label">Password*</label>
-                    <input type="password" class="form-control" placeholder="Create a password">
+                    <input type="password" class="form-control" placeholder="Create a password" id="pass" onblur="ktpass()">
+                    <span id="tbpass" class="text-danger"></span>
                 </div>
                 <div class="col-md-6">
                     <label class="form-label">Contact number*</label>
-                    <input type="text" class="form-control" placeholder="provide your number">
+                    <input type="text" class="form-control" placeholder="provide your number" id="sdt"   onblur="ktsdt()">
+                    <span id="tbsdt" class="text-danger"></span>
                 </div>
 
                 <div class="col-md-6">
                     <label class="form-label">Full name*</label>
-                    <input type="text" class="form-control" placeholder="Your Frist name and Last name">
+                    <input type="text" class="form-control" placeholder="Your First name and Last name" id="ten" onblur="ktten()">
+                    <span id="tbten" class="text-danger"></span>
                 </div>
                 <div class="col-md-6">
                     <label class="form-label">Your Location*</label>
-                    <input type="text" class="form-control" placeholder="Your Pincode and City">
+                    <input type="text" class="form-control" placeholder="Your Pincode and City" id="location">
                 </div>
 
                 <div class="col-md-6">

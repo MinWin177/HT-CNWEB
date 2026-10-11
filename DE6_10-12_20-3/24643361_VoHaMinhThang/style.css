@@ -1,0 +1,136 @@
+
+body {
+    font-family: "Times New Roman", Times, serif;
+    font-size: 13px;
+    background-color: white;
+    margin: 0;
+}
+
+#container {
+    width: 1060px;
+    margin: 0 auto;
+    border-right: 2px solid rgb(40, 152, 186) ;
+    border-left: 2px solid rgb(40, 152, 186) ; 
+}
+menu {
+    background-color: white;
+    margin: 0;
+    padding: 10px;
+}
+
+menu #logo {
+    height: 50px;
+    vertical-align: middle;
+}
+
+menu #nav {
+    float: right;
+    margin-top: 15px;
+}
+
+menu #nav a {
+    font-family: Arial, sans-serif;
+    color: rgb(87, 87, 241);
+    text-decoration: none;
+    margin-left: 15px;
+    font-weight: bold;
+}
+
+menu #nav a:hover {
+    color: red; 
+}
+
+header #banner {
+    width: 100%;
+}
+
+
+#content {
+    margin-top: 15px;
+}
+#content::after {
+    content: "";
+    display: block;
+    clear: both;
+}
+section {
+    font-family: 'Times New Roman', Times, serif;
+    float: left;
+    width: 60%;
+    font-size: 13px;
+    color: black;
+}
+
+section h2 {
+    color: rgb(69, 151, 7);
+}
+
+section table {
+    width: 80%;
+    border-collapse: collapse;
+    margin-top: 10px;
+    border-color: #a3c2e0;
+}
+
+section th {
+    background-color: #d0e1f9;
+    padding: 8px;
+}
+
+section td {
+    padding: 6px;
+    text-align: center;
+}
+
+
+aside {
+    float: right;
+    width: 40%;
+}
+
+aside h3 {
+    font-family: Arial, sans-serif;
+    color: rgb(69, 151, 7);
+}
+
+aside input, aside textarea {
+    width: 100%;
+    padding: 8px;
+    box-sizing: border-box;
+}
+
+aside button {
+    width: 100%;
+    padding: 10px;
+    background-color: #ffb700;
+    color: white;
+    border: none;
+    font-size: 16px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+footer {
+    clear:both;
+    margin-top: 10px;
+    padding: 40px;
+    font-family: Arial, sans-serif;
+    color: white;
+    background-image: linear-gradient(rgb(33, 221, 127), rgb(1, 46, 7));
+}
+
+footer #logo {
+    width: 250px;
+    float: left;
+    margin-right: 50px;
+}
+
+footer #info h1 {
+    margin: 0 0 30px 0;
+}
+
+footer #info p {
+    margin: 20px 0;
+    font-size: 13px;
+
+}
